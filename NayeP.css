@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #456882;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B3C53;
+  padding: 15px 40px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-box img {
+  height: 50px;
+}
+
+.logo-box span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: orange;
+}
+
+.hero, .about, .program, .contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1B3C53;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  margin: 8px auto;
+  padding: 10px;
+  width: 400px;
+  border-radius: 8px;
+  border: none;
+  background-color: white;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 25px;
+  background-color: #1B3C53;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #1B3C53;
+  text-align: center;
+  padding: 15px;
+}
+
+.btn-primary{
+  text-decoration: none;
+  border-radius: 10px solid;
+  padding: 10px;
+}
+
+.hero-badge{
+  display: inline-block;
+  background-color: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 6px 16px;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact input,
+  .contact textarea {
+    width: 90%;
+  }
+}
+
+.about-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero {
+  padding: 60px 20px;
+}
+
+.section-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: orange;
+  margin-bottom: 8px;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-list {
+  list-style: none;
+  max-width: 500px;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.about-list li {
+  padding: 6px 0 6px 20px;
+  position: relative;
+  color: rgba(255,255,255,0.85);
+}
+
+.about-list li::before {
+  content: '✦';
+  color: orange;
+  position: absolute;
+  left: 0;
+}
+
+.about p {
+  max-width: 650px;
+  margin: 0 auto 15px;
+  line-height: 1.7;
+}
+
+.program h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
